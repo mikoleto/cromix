@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Privacidad — CROMIX 25-26</title>
+  <meta name="description" content="Política de Privacidad de CROMIX 25-26" />
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#111827;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --accent:#60a5fa;
+      --border:#1f2937;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --radius:16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% 0%, rgba(96,165,250,.18), transparent 60%),
+        radial-gradient(1000px 500px at 90% 10%, rgba(34,197,94,.12), transparent 60%),
+        var(--bg);
+      line-height:1.6;
+    }
+    header{
+      padding:48px 20px 24px;
+      max-width:980px;
+      margin:0 auto;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-bottom:10px;
+    }
+    .logo{
+      width:44px;height:44px;border-radius:12px;
+      background:linear-gradient(135deg, rgba(96,165,250,.95), rgba(34,197,94,.85));
+      box-shadow: var(--shadow);
+    }
+    h1{
+      margin:0;
+      font-size: clamp(28px, 3vw, 40px);
+      letter-spacing:-0.02em;
+    }
+    .subtitle{
+      margin:10px 0 0;
+      color:var(--muted);
+      max-width:70ch;
+    }
+    main{
+      max-width:980px;
+      margin:0 auto;
+      padding:0 20px 60px;
+    }
+    .card{
+      background: rgba(17,24,39,.86);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .toolbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      padding:14px 16px;
+      border-bottom:1px solid var(--border);
+      background: rgba(17,24,39,.95);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      z-index: 5;
+    }
+    .toolbar .left{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .pill{
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--border);
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(31,41,55,.35);
+    }
+    .btn{
+      border:1px solid var(--border);
+      background: rgba(31,41,55,.45);
+      color:var(--text);
+      padding:8px 12px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:600;
+      transition:.15s transform,.15s background;
+    }
+    .btn:hover{ background: rgba(31,41,55,.7); transform: translateY(-1px); }
+    .btn:active{ transform: translateY(0px); }
+    .btn.primary{
+      border-color: rgba(96,165,250,.35);
+      background: rgba(96,165,250,.18);
+    }
+    .content{
+      padding: 22px 18px 30px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+    @media (min-width: 900px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+    section{
+      border:1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 16px;
+      background: rgba(11,15,23,.35);
+    }
+    section h2{
+      margin:0 0 10px;
+      font-size: 18px;
+    }
+    section h3{
+      margin:16px 0 8px;
+      font-size: 15px;
+      color: var(--text);
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+    }
+    .k{
+      font-family: var(--mono);
+      color: var(--accent);
+      font-size: 12px;
+    }
+    a{ color: var(--accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    ul{ margin:8px 0 0 20px; }
+    code{
+      font-family: var(--mono);
+      font-size: 0.95em;
+      background: rgba(31,41,55,.55);
+      border:1px solid var(--border);
+      padding:2px 6px;
+      border-radius:8px;
+    }
+    footer{
+      max-width:980px;
+      margin:18px auto 0;
+      padding: 0 20px 40px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .small{ font-size: 13px; color: var(--muted); }
+    .hidden{ display:none; }
+    .langSwitch{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Política de Privacidad — CROMIX 25-26</h1>
+        <p class="subtitle">Página oficial de privacidad para la app <strong>CROMIX 25-26</strong>.</p>
+        <div class="meta">
+          <span class="pill">Última actualización: <strong>12/02/2026</strong></span>
+          <span class="pill">Contacto: <a href="mailto:miguelmcg@gmail.com">miguelmcg@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="toolbar">
+        <div class="left">
+          <span class="pill"><span class="k">CROMIX</span> 25-26</span>
+          <span class="pill">Privacidad</span>
+        </div>
+
+        <div class="langSwitch" aria-label="Selector de idioma">
+          <button class="btn primary" id="btnES" type="button">ES</button>
+          <button class="btn" id="btnEN" type="button">EN</button>
+          <button class="btn" type="button" onclick="window.print()">Imprimir / PDF</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- ES -->
+        <div id="es">
+          <div class="grid">
+            <section>
+              <h2>Política de privacidad CROMIX</h2>
+              <p><strong>Última actualización:</strong> 12/02/2026</p>
+              <p>
+                Esta Política de Privacidad describe cómo se recopila, utiliza y comparte la información cuando usas
+                <strong>CROMIX 25-26</strong> (en adelante, la “App”), una herramienta para llevar un control de cromos y
+                marcar los que tienes, los que te faltan y los repetidos.
+              </p>
+
+              <h3>1) Responsable</h3>
+              <ul>
+                <li><strong>Responsable:</strong> Miguel Cabezas Gonzalo</li>
+                <li><strong>Email de contacto:</strong> <a href="mailto:miguelmcg@gmail.com">miguelmcg@gmail.com</a></li>
+              </ul>
+
+              <h3>2) Datos que se recopilan</h3>
+              <p>
+                La App no requiere crear una cuenta y, por defecto, <strong>no solicita</strong> nombre, número de teléfono,
+                dirección u otros datos personales identificativos.
+              </p>
+              <p>
+                La App puede tratar datos a través de proveedores externos para publicidad y compras dentro de la app:
+              </p>
+
+              <h3>2.1 Publicidad (Google AdMob)</h3>
+              <p>La App puede mostrar anuncios mediante <strong>Google AdMob</strong>. AdMob y sus partners pueden recopilar o procesar información como:</p>
+              <ul>
+                <li>Identificadores del dispositivo (por ejemplo, identificadores publicitarios cuando estén disponibles)</li>
+                <li>Información técnica del dispositivo (modelo, versión de iOS, idioma)</li>
+                <li>Dirección IP (que puede usarse para estimar ubicación aproximada)</li>
+                <li>Eventos relacionados con anuncios (impresiones, clics y rendimiento)</li>
+                <li>Datos de diagnóstico y prevención de fraude</li>
+              </ul>
+              <p>
+                <strong>Publicidad personalizada:</strong> cuando sea aplicable (por ejemplo, en EEA/UK/CH), se solicitará
+                consentimiento antes de usar ciertos datos para anuncios personalizados.
+              </p>
+
+              <h3>2.2 Compras dentro de la app (Apple)</h3>
+              <p>La App ofrece una compra única <strong>“Quitar anuncios” (0,99€)</strong>:</p>
+              <ul>
+                <li>El pago lo procesa <strong>Apple</strong> mediante compras dentro de la app (In-App Purchase).</li>
+                <li><strong>No</strong> recibimos ni almacenamos datos bancarios o de tarjeta.</li>
+                <li>La App puede verificar en el dispositivo si la compra está activa para eliminar anuncios y permitir la restauración de compras.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Información adicional (ES)</h2>
+
+              <h3>3) Finalidades</h3>
+              <p>La información se utiliza para:</p>
+              <ul>
+                <li>Mostrar anuncios y medir su rendimiento (según consentimiento/configuración).</li>
+                <li>Prevenir fraude y mantener la seguridad del servicio publicitario.</li>
+                <li>Mantener y mejorar la App (diagnóstico, estabilidad y rendimiento).</li>
+                <li>Gestionar la compra “Quitar anuncios” y la restauración de compras.</li>
+              </ul>
+
+              <h3>4) Consentimiento (GDPR/EEA/UK/CH)</h3>
+              <p>
+                Si te encuentras en el <strong>Espacio Económico Europeo (EEA)</strong>, Reino Unido o Suiza, la App puede solicitar tu
+                <strong>consentimiento</strong> mediante un mensaje de privacidad para determinar cómo se pueden usar ciertos datos con fines publicitarios.
+                Podrás <strong>aceptar</strong>, <strong>rechazar</strong> o <strong>gestionar tus opciones</strong>.
+              </p>
+
+              <h3>5) Terceros</h3>
+              <p>La App utiliza servicios de terceros:</p>
+              <ul>
+                <li><strong>Google AdMob (Google LLC)</strong>: entrega y medición de anuncios.</li>
+                <li><strong>Apple</strong>: procesamiento de compras dentro de la app.</li>
+              </ul>
+
+              <h3>6) Conservación de datos</h3>
+              <p>
+                La App no almacena en servidores propios la mayoría de datos relacionados con anuncios.
+                El tratamiento y conservación de datos publicitarios se realiza principalmente por los proveedores (por ejemplo, Google) según sus políticas.
+              </p>
+
+              <h3>7) Menores (App familiar)</h3>
+              <p><strong>CROMIX 25-26</strong> está pensada como una herramienta de uso <strong>general y familiar</strong>, para coleccionistas de todas las edades, incluyendo <strong>niños y adultos</strong>.</p>
+              <ul>
+                <li><strong>No recopilamos intencionadamente información personal de menores.</strong></li>
+                <li>Si eres padre/madre o tutor y crees que un menor nos ha proporcionado información personal, contacta en <a href="mailto:miguelmcg@gmail.com">miguelmcg@gmail.com</a>.</li>
+              </ul>
+
+              <h3>8) Derechos y contacto</h3>
+              <p>Para cualquier consulta relacionada con privacidad, puedes escribir a: <a href="mailto:miguelmcg@gmail.com">miguelmcg@gmail.com</a>.</p>
+              <p class="small">Cuando aplique la normativa (por ejemplo, GDPR en EEA/UK/CH), podrás ejercer tus derechos conforme a la legislación vigente.</p>
+
+              <h3>9) Cambios en esta política</h3>
+              <p>
+                Podemos actualizar esta Política de Privacidad para reflejar cambios en la App o requisitos legales.
+                Publicaremos la versión actualizada en esta misma página e indicaremos la fecha de la última actualización.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div id="en" class="hidden">
+          <div class="grid">
+            <section>
+              <h2>Privacy Policy — CROMIX 25-26</h2>
+              <p><strong>Last updated:</strong> 12/02/2026</p>
+              <p>
+                This Privacy Policy explains how information is collected, used, and shared when you use <strong>CROMIX 25-26</strong>
+                (the “App”), a tool to track your stickers and mark which ones you own, which ones are missing, and duplicates.
+              </p>
+
+              <h3>1) Data Controller</h3>
+              <ul>
+                <li><strong>Controller:</strong> Miguel Cabezas Gonzalo</li>
+                <li><strong>Contact email:</strong> <a href="mailto:miguelmcg@gmail.com">miguelmcg@gmail.com</a></li>
+              </ul>
+
+              <h3>2) Information we process</h3>
+              <p>
+                The App does not require an account and does not ask for your name, phone number, address, or other directly identifying personal data by default.
+              </p>
+              <p>
+                The App may process data through third-party providers for advertising and in-app purchases:
+              </p>
+
+              <h3>2.1 Advertising (Google AdMob)</h3>
+              <p>The App may display ads via <strong>Google AdMob</strong>. AdMob and its partners may collect/process information such as:</p>
+              <ul>
+                <li>Device identifiers (e.g., advertising identifiers when available)</li>
+                <li>Device technical information (model, iOS version, language)</li>
+                <li>IP address (may be used to infer approximate location)</li>
+                <li>Ad-related events (impressions, clicks, performance)</li>
+                <li>Diagnostics and fraud-prevention signals</li>
+              </ul>
+              <p>
+                <strong>Personalized ads:</strong> where applicable (e.g., EEA/UK/CH), consent will be requested before using certain data for personalized advertising.
+              </p>
+
+              <h3>2.2 In-app purchases (Apple)</h3>
+              <p>The App offers a one-time purchase <strong>“Remove Ads” (€0.99)</strong>:</p>
+              <ul>
+                <li>Payments are processed by <strong>Apple</strong> via In-App Purchases.</li>
+                <li>We do <strong>not</strong> receive or store payment card/banking details.</li>
+                <li>The App may verify purchase entitlement on-device to remove ads and enable purchase restoration.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Additional information (EN)</h2>
+
+              <h3>3) Purposes</h3>
+              <p>Information is used to:</p>
+              <ul>
+                <li>Display ads and measure performance (subject to consent/settings).</li>
+                <li>Prevent fraud and maintain ad security.</li>
+                <li>Maintain and improve the App (diagnostics, stability, performance).</li>
+                <li>Enable the “Remove Ads” feature and purchase restoration.</li>
+              </ul>
+
+              <h3>4) Consent (GDPR/EEA/UK/CH)</h3>
+              <p>
+                If you are located in the <strong>EEA</strong>, the UK, or Switzerland, the App may request your <strong>consent</strong>
+                via a privacy message so you can <strong>accept</strong>, <strong>reject</strong>, or <strong>manage your choices</strong>
+                regarding certain ad-related data processing.
+              </p>
+
+              <h3>5) Third parties</h3>
+              <p>The App uses third-party services:</p>
+              <ul>
+                <li><strong>Google AdMob (Google LLC)</strong> for ad delivery and measurement.</li>
+                <li><strong>Apple</strong> for in-app purchase processing.</li>
+              </ul>
+
+              <h3>6) Data retention</h3>
+              <p>
+                The App does not store most ad-related data on its own servers. Advertising data processing and retention are mainly handled by providers (e.g., Google) under their policies.
+              </p>
+
+              <h3>7) Children (Family app)</h3>
+              <p><strong>CROMIX 25-26</strong> is intended as a <strong>general/family</strong> tool for collectors of all ages, including <strong>children and adults</strong>.</p>
+              <ul>
+                <li>We do not knowingly collect personal information from children.</li>
+                <li>If you are a parent/guardian and believe a child has provided personal information, contact <a href="mailto:miguelmcg@gmail.com">miguelmcg@gmail.com</a>.</li>
+              </ul>
+
+              <h3>8) Contact</h3>
+              <p>For privacy-related questions, contact: <a href="mailto:miguelmcg@gmail.com">miguelmcg@gmail.com</a>.</p>
+              <p class="small">Where applicable (e.g., GDPR in EEA/UK/CH), you may exercise your rights under local law.</p>
+
+              <h3>9) Changes</h3>
+              <p>
+                We may update this Privacy Policy from time to time. We will post the updated version on this page and update the “Last updated” date.
+              </p>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> CROMIX 25-26 · Política de Privacidad</p>
+  </footer>
+
+  <script>
+    const es = document.getElementById('es');
+    const en = document.getElementById('en');
+    const btnES = document.getElementById('btnES');
+    const btnEN = document.getElementById('btnEN');
+
+    function setLang(lang){
+      const isES = lang === 'es';
+      es.classList.toggle('hidden', !isES);
+      en.classList.toggle('hidden', isES);
+
+      btnES.classList.toggle('primary', isES);
+      btnEN.classList.toggle('primary', !isES);
+
+      document.documentElement.lang = lang;
+      localStorage.setItem('cromix_lang', lang);
+    }
+
+    btnES.addEventListener('click', () => setLang('es'));
+    btnEN.addEventListener('click', () => setLang('en'));
+
+    // Default language
+    const saved = localStorage.getItem('cromix_lang');
+    if(saved === 'en' || saved === 'es') setLang(saved);
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
